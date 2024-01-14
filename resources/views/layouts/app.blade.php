@@ -13,6 +13,19 @@
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
+      <!-- App favicon -->
+      <link rel="shortcut icon" href="https://themesbrand.com/doot/layouts/assets/images/favicon.ico" id="tabIcon">
+      <!-- glightbox css -->
+      <link rel="stylesheet" href="{{ asset('chatbox/css/glightbox.min.css')}}">
+      <!-- swiper css -->
+      <link rel="stylesheet" href="{{ asset('chatbox/css/swiper-bundle.min.css')}}">
+      <!-- Bootstrap Css -->
+      <link href="{{ asset('chatbox/css/bootstrap.min.css')}}" id="bootstrap-style" rel="stylesheet" type="text/css">
+      <!-- Icons Css -->
+      <link href="{{ asset('chatbox/css/icons.min.css')}}" rel="stylesheet" type="text/css">
+      <!-- App Css-->
+      <link href="{{ asset('chatbox/css/app.min.css')}}" id="app-style" rel="stylesheet" type="text/css">
+
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
@@ -76,5 +89,26 @@
             @yield('content')
         </main>
     </div>
+
+     <!-- end  layout wrapper -->
+        <!-- JAVASCRIPT -->
+        <script src="{{ asset('chatbox/js/bootstrap.bundle.min.js')}}"></script>
+        <script src="{{ asset('chatbox/js/simplebar.min.js')}}"></script>
+        <script src="{{ asset('chatbox/js/waves.min.js')}}"></script>
+        <!-- glightbox js -->
+        <script src="{{ asset('chatbox/js/glightbox.min.js')}}"></script>
+
+        <!-- Swiper JS -->
+        <script src="{{ asset('chatbox/js/swiper-bundle.min.js')}}"></script>
+
+        <!-- fg-emoji-picker JS -->
+        <script src="{{ asset('chatbox/js/fgEmojiPicker.js')}}"></script>
+
+        <!-- page init -->
+        <script src="{{ asset('chatbox/js/index.init.js')}}"></script>
+
+        <script src="{{ asset('chatbox/js/app.js')}}"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
